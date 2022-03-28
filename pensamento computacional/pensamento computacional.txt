@@ -1,0 +1,88 @@
+VISÃO GERAL:
+
+Refere-e ao precesso de pensamnto envolvido na 
+expressão de soluções 
+em passos computacionais ou algoritimos que podem ser implementados 
+no computador.
+
+--> Formulação e resoluçao de problemas(Sistematico e eficiente).
+--> Ser humano e maquina possam entender.
+
+-->Habilidade generalista(Todas as areas acadêmicas)
+
+-->É dividido em 4 pilares:
+	-Decomposição: Dividir um problema complexo e pegar o problema dividido de uma maneira que se torna mais fácil resolver. Ex: Decompor um bolo para fazer
+	 --Massa->Recheio->Cobertura.
+	 -Reconhecimento d padrões: Identificar padrões dentro de de terminado problema. Ex: Um grafico com padrão.
+	 -Abstração: Extrapolar o conceiro do problema para uma forma generalista(Resolução dos problemas).
+	 -Design de algoritimos: Definir passo a passo o problema e como resolver.
+
+Além dos pilares é necessario que tenha em mente que é preciso aprimiorar, é preciso aperfeiçoar e testa-la.
+--Anlise->teste->Armazenamento(Ciclo)
+
+-->Raciocínio Logico: Pensamento estruturado para resolver os problemas com eficiencia.
+
+-->Competências: 
+	--Pensamento Sistematico.
+	--Colaboração dentro da equipe.
+	--Criatividade e design.
+	--Facilitador.
+
+HABILIDADES COMPLEMENTARES: 
+
+--> Raciocinio Logico: Pensamento estruturado que vai nos permitir a resolução de problemas de uma maneira simples.
+	-Encontar soluções para problemas que parecem ser dificies e na verdade são simples.
+	-Classificado em três tipos: 
+		-Indução:Dado o fenonemo que estou observando, pega e leva ele para o campo das ideias(Tentativa e erro), esperientos.
+		-Dedução:Uma lei e uma teoria, eu vou dar uma dedução relacionada ao problema.
+		-Abdução: Conclusão para determinar a premissa.(A grama esta molhada, logo deve ter chovido). 
+		Pode ser por parte sintetica(Abdução, Indução) e Analitica(dedução) 
+
+-->Aperfeiçoamento: A partir de uma soluão, determinar pontos de melhora.
+	-Melhoramento
+	-Aprimoriamento
+	-Refinamento
+	
+	Seria:
+	
+	-Encontrar uma soluçao eficiente
+	-Otimizar Processos
+	(Melhor uso de recursos)
+	-Simplificar linhas de codigo
+	-Funçoes bem definida
+	(Melhorar codigos e algoritimos)
+
+--Processo continuo presente em todas as etapas, dando varias vantagens: 
+	-Maior compreensão 
+	-Maior eficiencia
+	-Menos tempo
+	-Menos armazenamento
+
+DECOMPOSIÇÃO:
+
+-->Primeiro passo da resoluçao de problemas dentro do conceito de pensamento computacional.
+	--"Dado um problema complexo, devemos quebra-lo em problemas menores. Portanto, problemas mais faceis e gerenciáveis"
+
+	-Analise: Analisar estudando, e é o processo de quebra e determinar partes menores.
+	-Sintese: Combinar os elementos recompondo o problema original, é o processo de recontrução.
+	-A ordem de separação pode ser Sequêncial(Ordem), ou Pararelo(separa para melhor tempo e eficiência).
+
+-Detecta as variáveis, pequenos problemas, segmentação.
+
+-Como Decompor?: Deixa o problema principal em segundo plano e foca nos componentes(O que é preciso do problema principal para poder resolve-lo, caracteristicas, dependencias)
+	Identificar->Agregar->Funcionalidade->Decomposião
+
+Ex: Comidas, processos de cozinhar
+	-Identificar quais são os ingredientes das comidas, as dependências dos ingredientes entre eles e etc.
+    Criar um App:
+	-Finalidade
+	-Interface
+	-Funcionalidades
+	-Pre-requisitos.
+
+PADRÕES: 
+
+-->Modelo de referencia, modelo para contruir algo que ja está estuturado.
+	Estrutura invariante
+	Repetição
+--Similiradiedade e diferença: Fotos de redes sociais(Armz)
