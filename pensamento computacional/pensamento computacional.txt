@@ -3,7 +3,7 @@ VISÃO GERAL:
 Refere-e ao precesso de pensamnto envolvido na 
 expressão de soluções 
 em passos computacionais ou algoritimos que podem ser implementados 
-no computador.
+no computador;
 
 --> Formulação e resoluçao de problemas(Sistematico e eficiente).
 --> Ser humano e maquina possam entender.
