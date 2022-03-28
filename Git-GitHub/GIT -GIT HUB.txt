@@ -1,6 +1,6 @@
 Comoando no cmd para:
 
-Listar: dir
+Listar: dir.
 
 navegar entre pastas: cd /
 		      cd Windows
