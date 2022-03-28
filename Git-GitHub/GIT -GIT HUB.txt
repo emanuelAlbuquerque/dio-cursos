@@ -1,0 +1,339 @@
+Comoando no cmd para:
+
+Listar: dir
+
+navegar entre pastas: cd /
+		      cd Windows
+para voltar é: cd ..
+
+Comando para limpar: cls
+
+TAB: auto-completa
+
+criar uma pasta: mkdir
+Ex: mkdir workspace - cria uma pasta com o nome workspace
+
+Criar arquivos: C:/workspace > echo hello > hello.txt - O echo vai imprimir no cmd o hello e com o > vai analisar 
+se ja tem um arquivo hello, se não tiver vai criar o arquivo na pasta workspace e colocar dentro o "hello"
+
+para apagar arqivos da pasta - del
+
+remover repositorio(pasta): rmdir workspace /S /Q									   
+															   
+---------------------------------------------------------------------------------------------------------------------------
+
+Como o Git funciona: 
+
+-->SHA1:
+	É um algoritimo de incripitação, é um cojunto de funções hash criptografados projetadas pela NSA.
+		É relevante pois a saida desses dados incripitados gera um conjunto de characteres indetificador(único)de 40 dígitos.
+		--Ex: Se tiver um algoritimo muito grande, e incripitar ele com o SHA1, ele va gerar um conjunto de identificador de 40 
+		      digitos para esse algoritimo.
+			openssl sha1 (nome do arquivo)-> da o algoritimo de incriptação.
+
+OBJETOS INTERNOS DO GIT:
+	--Blobs: Contem os meta dados dos aquivos no gi
+	--Tree: Armazena blobs que tem o sha1, e também guarda o nome do arquivo, monta toda a estutura, e também em um sha1 dos metadados.
+	--Commit: junta tudo, ele aponta para uma tree, aponta para um parente(outro arquivo commit), aponta para o autor, e aponta para a 
+	  mensagem e o timestamp(aruivo de tempo de quando foi criado), e também tem sha1 
+
+CHAVES SSH E TOKEN: 
+
+-->SSH: É uma chave pública e uma privada, a maquina vai gerar uma chave e manda ela para o git, para o git conhecer a sua maquina, os arquivos dela.
+		Gerar a chave: ssh-keygen -t rsa -b 4096 -C “meu-email@email.com.br“
+			       ssh-keygen -t ed25519 -C “meu-email@email.com.br“
+		Listar chaves: ls -al ~/.ssh
+		Adicionar no Git-hub: clip < ~/.ssh/id_ed25519.pub//(E colar no git hub)
+				      Pode ser também com o comando cat
+		Autenticar com o ssh-agent: eval $(ssh-agent -s) - para passar pro agente: ssh-add ~/.ssh/id_25519(A chave privada)
+
+Obs: Para usar o cd para mudar de diretorios grandes que contém pastas com letras separadas, usa-se aspas no comando Ex:
+		cd /c/Users/Emanuel Albuquerque/.ssh-->ERRADO
+		cd "/c/Users/Emanuel Albuquerque/.ssh"-->CERTO
+
+		Clonar diretorios:  git clone (link do ssh do diretorio no github)
+
+-->TOKEN DE ACESSO PESSOAL: Gera um token no github e guarda na maquina, e toda vez que gera um commit, precisara colocar o usuario do gitHub e a senha é o token.
+	O token é gerado no github, e o link que pega é o https, quando for clonar ele vai peir o token como senha
+
+PRIMERIOS COMANDOS COM O GIT:
+		--Iniciar o git-->git init
+		--Iniciar um versionamento--> git add
+		--Criar um commit--> git commit
+
+--> Criar um Repósitorio: 
+
+Obs: a flex -a mostra arquivos ocultos dentro das pastas, como o arquico .git, Ex: ls -a 
+
+--Se for a primeira vez usando o git ele pedira uma configurção , para clocar o Users e um e-mail, e sempre que usar o git para criar commits ele vai pedir:
+		--git config --global user.email "(seu e-mail)"
+		--git config --global user.name "(nome de usuario)"
+
+--Criando um aquivo:
+		Markdown: Uma forma mais humana se escrever o html. Ex: <h1>Ola</h1>(HTML)||#Ola(markdown)(Os # equivale ao nivel do titulo, como o h2, h3...No markdown é #, ##, ###...)
+			  Os arquivos tem a extensão .md no final
+
+--Criando um commit: Commits são os objetos do gits que dão significado as alterações, e que carrega uma mensagem de texto;
+			git add *
+			git commit -m "(mensagem para o commit passar)"
+
+
+CICLO DE VIDA DOS ARQUIVOS GIT: 
+
+Untrecked--> git add.(O primeiro arquivo a ser criado)
+Unmodified--> Um arqivo do git que ainda não sofreu alterações. 
+Modified--> Um arquivo git que sofreu alterações.
+Staged--> Quando roda um arquivo add no modified ele vira Staged.
+		--Ele se prepara para fazer parte de um comiit, e quando dar o comiit ele deixa de ser modifeid, e passa de novo para o Unmodified para retornar o ciclo, aguardando novos comandos.
+
+--O comando git status ajuda a monitorar os esados dos arquivos
+
+-->MANDAR AS PASTAS PARA O GITHUB: 
+		git remote add origin (e o link do repositorio)--> Conecta o repositorio
+		git remote -v --> Lista a lista de repositorios que tem cadastrado.
+		git push origin master --> Para mandar a pasta para o repositorio conectado
+		git pull origin master--> Puxa o conteudo do repositorio para o git
+
+
+Emanuel@DESKTOP-B761URH MINGW64 ~
+$ cd /c
+
+Emanuel@DESKTOP-B761URH MINGW64 /c
+$ mkdir workspace
+
+Emanuel@DESKTOP-B761URH MINGW64 /c
+$ cd /c/workspace
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace
+$ mkdir livro-receitas
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace
+$ ls
+livro-receitas/
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace
+$ cd livro-receitas
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas
+$ git init
+Initialized empty Git repository in C:/workspace/livro-receitas/.git/
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git config --global user.email "emanuelalbuquerque16@gmail.com"
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git config --global user.name "Emanuel1308"
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git add *
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git commit -m "commit inicial"
+[master (root-commit) 19394a9] commit inicial
+ 1 file changed, 7 insertions(+)
+ create mode 100644 strogonof.md
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ ls
+strogonof.md
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ mkdir receitas
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ ls
+receitas/  strogonof.md
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ mv strogonof.md ./receitas/
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ ls
+receitas/
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ cd receitas
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas/receitas (master)
+$ ls
+strogonof.md
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas/receitas (master)
+$ cd ..
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    strogonof.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        receitas/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git add strogonof.md receitas/
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    strogonof.md -> receitas/strogonof.md
+
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git commit -m "cria pasta receitas, move aruivos para receitas"
+[master 7c0af7b] cria pasta receitas, move aruivos para receitas
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename strogonof.md => receitas/strogonof.md (100%)
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ echo > README.md
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ ls
+README.md  receitas/
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git add *
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   README.md
+
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git comiit -m "Adiciona index"
+git: 'comiit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git commit -m "Adiciona index"
+[master 7c8cd83] Adiciona index
+ 1 file changed, 5 insertions(+)
+ create mode 100644 README.md
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git config list
+error: key does not contain a section: list
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ cd..
+bash: cd..: command not found
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ cd ..
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace
+$ cd ..
+
+Emanuel@DESKTOP-B761URH MINGW64 /c
+$ cd ..
+
+Emanuel@DESKTOP-B761URH MINGW64 /
+$ cd ..
+
+Emanuel@DESKTOP-B761URH MINGW64 /
+$ git config list
+error: key does not contain a section: list
+
+Emanuel@DESKTOP-B761URH MINGW64 /
+$ git cofig --list
+git: 'cofig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+Emanuel@DESKTOP-B761URH MINGW64 /
+$ cd /c/workspace/livro-receitas
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=true
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=emanuelalbuquerque16@gmail.com
+user.name=Emanuel1308
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git remote add origin git@github.com:Emanuel1308/livro-receitas.git
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git remote -v
+origin  git@github.com:Emanuel1308/livro-receitas.git (fetch)
+origin  git@github.com:Emanuel1308/livro-receitas.git (push)
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 834 bytes | 27.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Emanuel1308/livro-receitas.git
+ * [new branch]      master -> master
+
+Emanuel@DESKTOP-B761URH MINGW64 /c/workspace/livro-receitas (master)
+$
+
+
