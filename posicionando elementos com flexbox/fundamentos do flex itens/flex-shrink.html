@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex shrink</title>
+    <style>
+      .flex-container {
+        max-width: 350px;
+        border: 1px solid black;
+        display: flex;
+        margin-bottom: 20px;
+      }
+      .item {
+        margin: 5px;
+        background-color: darkslateblue;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+      }
+      .s-1 {
+        flex-shrink: 1;
+      }
+      .s-0 {
+        flex-shrink: 0;
+        flex-basis: 100px;
+      }
+      .s-2 {
+        flex-shrink: 2;
+        flex-basis: 100px;
+      }
+      .s-3 {
+        flex-shrink: 3;
+        flex-basis: 200px;
+      }
+      .fg-1 {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <p>flex-shrink 1</p>
+    <div class="flex-container">
+      <div class="item fg-1 s-1">A</div>
+      <div class="item fg-1 s-1">B</div>
+      <div class="item fg-1 s-1">C</div>
+      <div class="item fg-1 s-1">D</div>
+      <div class="item fg-1 s-1">E</div>
+    </div>
+
+    <div class="flex-container">
+      <div class="item fg-1 s-1">A</div>
+      <div class="item s-1 fg-1">
+        bnb j nv kjjk, fjv fjd jfdb bhdb hbdb hdb hg jgfjjkkjbk
+      </div>
+      <div class="item fg-1 s-1">C</div>
+      <div class="item fg-1 s-1">D</div>
+      <div class="item fg-1 s-1">E</div>
+    </div>
+
+    <p>flex-shrink 0 // basies 100px</p>
+    <div class="flex-container">
+      <div class="item fg-1 s-0">A</div>
+      <div class="item fg-1 s-0">BBBBBBBBB</div>
+      <div class="item fg-1 s-0">cccccccccc</div>
+      <div class="item fg-1 s-0">D</div>
+      <div class="item fg-1 s-0">E</div>
+    </div>
+
+    <div class="flex-container">
+      <div class="item fg-1 s-2">A</div>
+      <div class="item fg-1 s-2">BBBBBBBBBBBBBBBBBBB</div>
+      <div class="item fg-1 s-2">cccCCCCccccccc</div>
+      <div class="item fg-1 s-2">D</div>
+      <div class="item fg-1 s-2">E</div>
+    </div>
+
+    <div class="flex-container">
+      <div class="item fg-1 s-3">A</div>
+      <div class="item fg-1 s-3">BBBBBBBBB</div>
+      <div class="item fg-1 s-3">cccccccccc</div>
+      <div class="item fg-1 s-3">D</div>
+      <div class="item fg-1 s-3">E</div>
+    </div>
+
+    <div class="flex-container">
+      <div class="item fg-1 s-1">A</div>
+      <div class="item fg-1 s-3">
+        bnb j n,,,v kjjk, fjv fjd jfdb bjjwv
+        jwkvjkwrvjkwcenjwkvuiwrbvwrbyvbyrvbywbyhdb hbdb hdb hg jgfjjkkjbk
+      </div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+    </div>
+  </body>
+</html>
