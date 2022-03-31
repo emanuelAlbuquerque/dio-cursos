@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justify Content</title>
+    <style>
+      .container {
+        margin: 0;
+        max-width: 400px;
+        border: 1px solid black;
+        display: flex;
+      }
+      .item {
+        background-color: aqua;
+        margin: 5px;
+        text-align: center;
+        color: black;
+      }
+      .flex-start {
+        justify-content: flex-start;
+      }
+      .flex-end {
+        justify-content: flex-end;
+      }
+      .flex-center {
+        justify-content: center;
+      }
+      .space-between {
+        justify-content: space-between;
+      }
+      .space-around {
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex start</h1>
+    <section class="container flex-start">
+      <div class="item">1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Outro item</div>
+      <div class="item">Outro item</div>
+      <div class="item">Outro item</div>
+    </section>
+
+    <h1>Flex end</h1>
+    <section class="container flex-end">
+      <div class="item">1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Outro item</div>
+      <div class="item">Outro item</div>
+      <div class="item">Outro item</div>
+    </section>
+
+    <h1>Flex center</h1>
+    <section class="container flex-center">
+      <div class="item">1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Outro item</div>
+      <div class="item">4 item</div>
+      <div class="item">5</div>
+    </section>
+
+    <h1>Space-between</h1>
+    <section class="container space-between">
+      <div class="item">1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Outro item</div>
+      <div class="item">4 item</div>
+      <div class="item">5</div>
+    </section>
+
+    <h1>Space-around</h1>
+    <section class="container space-around">
+      <div class="item">1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Outro item</div>
+      <div class="item">4 item</div>
+      <div class="item">5</div>
+    </section>
+  </body>
+</html>
