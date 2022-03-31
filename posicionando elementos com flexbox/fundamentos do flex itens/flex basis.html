@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex basis</title>
+
+    <style>
+      .flex-container {
+        max-width: 500px;
+        border: 1px solid black;
+        display: flex;
+      }
+      .item {
+        background-color: darkred;
+        color: white;
+        margin: 5px;
+        text-align: center;
+      }
+      .basisAuto {
+        flex-basis: auto;
+      }
+      .basis0 {
+        flex-basis: 0;
+      }
+      .w100 {
+        flex-basis: 100px;
+      }
+      .flex-grow1 {
+        flex-grow: 1;
+      }
+      .flex-grow2 {
+        flex-grow: 2;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Basis auto</h1>
+    <p>Flex basis com Flex-grow 1</p>
+    <div class="flex-container">
+      <div class="item basisAuto flex-grow1">A</div>
+      <div class="item flex-grow2">BBB</div>
+      <div class="item flex-grow1">C</div>
+      <div class="item">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item">A</div>
+      <div class="item basisAuto flex-grow1">BBB</div>
+      <div class="item">C</div>
+      <div class="item">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item">A</div>
+      <div class="item">BBB</div>
+      <div class="item basisAuto flex-grow1">C</div>
+      <div class="item">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item">A</div>
+      <div class="item">BBB</div>
+      <div class="item">C</div>
+      <div class="item basisAuto flex-grow1">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item basisAuto flex-grow1">AAAAAAA</div>
+      <div class="item basisAuto flex-grow1">BBB</div>
+      <div class="item basisAuto flex-grow1">C</div>
+      <div class="item basisAuto flex-grow1">DCB</div>
+    </div>
+
+    <p>Flex basis com Flex-grow 2</p>
+    <div class="flex-container">
+      <div class="item basisAuto flex-grow2">A</div>
+      <div class="item">BBB</div>
+      <div class="item">C</div>
+      <div class="item">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item">A</div>
+      <div class="item basisAuto flex-grow2">BBB</div>
+      <div class="item">C</div>
+      <div class="item">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item">A</div>
+      <div class="item">BBB</div>
+      <div class="item basisAuto flex-grow2">C</div>
+      <div class="item">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item">A</div>
+      <div class="item">BBB</div>
+      <div class="item">C</div>
+      <div class="item basisAuto flex-grow2">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item basisAuto flex-grow2">AAAAAAAAAAA</div>
+      <div class="item basisAuto flex-grow2">BBB</div>
+      <div class="item basisAuto flex-grow2">C</div>
+      <div class="item basisAuto flex-grow2">DCB</div>
+    </div>
+
+    <h2>Basis 0</h2>
+    <p>Flex basis com Flex-grow 1</p>
+    <div class="flex-container">
+      <div class="item basis0 flex-grow1">A</div>
+      <div class="item">BBB</div>
+      <div class="item">C</div>
+      <div class="item">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item">A</div>
+      <div class="item basis0 flex-grow1">BBB</div>
+      <div class="item">C</div>
+      <div class="item">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item">A</div>
+      <div class="item">BBB</div>
+      <div class="item basis0 flex-grow1">C</div>
+      <div class="item">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item">A</div>
+      <div class="item">BBB</div>
+      <div class="item">C</div>
+      <div class="item basis0 flex-grow1">DCB</div>
+    </div>
+    <div class="flex-container">
+      <div class="item basis0 flex-grow1">AAAAAAAAAAA</div>
+      <div class="item basis0 flex-grow1">BBB</div>
+      <div class="item basis0 flex-grow1">C</div>
+      <div class="item basis0 flex-grow1">DCB</div>
+    </div>
+
+    <h2>Basis-widht</h2>
+    <p>Sem flex grow</p>
+    <div class="flex-container">
+      <div class="item w100">AAAA</div>
+      <div class="item w100">BBB</div>
+      <div class="item w100">C</div>
+      <div class="item w100">DCB</div>
+    </div>
+
+    <p>Com flex grow 2</p>
+    <div class="flex-container">
+      <div class="item w100 flex-grow2">AAAA</div>
+      <div class="item w100 flex-grow2">BBB</div>
+      <div class="item w100 flex-grow2">C</div>
+      <div class="item w100 flex-grow2">DCB</div>
+    </div>
+
+    <p>Com flex grow 3</p>
+    <div class="flex-container">
+      <div class="item w100 flex-grow3">AAAA</div>
+      <div class="item w100 flex-grow3">BBB</div>
+      <div class="item w100 flex-grow3">C</div>
+      <div class="item w100 flex-grow3">DCB</div>
+      <div class="item w100 flex-grow3">DCB</div>
+      <div class="item w100 flex-grow3">DCB</div>
+    </div>
+  </body>
+</html>
