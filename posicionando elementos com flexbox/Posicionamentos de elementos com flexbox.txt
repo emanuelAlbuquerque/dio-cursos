@@ -1,0 +1,71 @@
+	FLEX CONTAINER: 
+
+-display:Inicializador do container.
+-flex-direction:Fazer o direcionamento dos itens(em linha, em coluna).
+-flex-wharp:Se aplica pra quebra de linha.
+-flex-flow:Abreviação para o direction e o wrap
+-justufy-content:Alinha os itens do container de acordo com a direção
+-align-itens:Alinha os inteis de acordo com o eixo 
+-align-content:Alinha as liinhas desses container.
+
+FLEX ITENS:
+
+-flex-grow: Define o fator de creciemnto
+-flex-basis:Define o tamanho inicial do item antes da destribuição do espaço restante do container.
+-flex-shrink:capacidade de redução
+-flex:Abreviação
+-order:Destribuição
+-align-self:Define o alinhamento de um intem especifico do container.
+
+
+FUNDAMENTOS DO FLEX CONTAINER: 
+	display-flex
+	flex-direction: estabelece eixos no container em linha ou coluna.
+		row:É o padrão, da esqueda para direita.
+		row-reverse: É  oposto da direção.
+		column: uma coluna de cima para baixo.
+		column-reverse: O oposto da coluna, de baixo para cima.
+	flex-wrap: Define ou não a quebra de linha.
+		nowrap: Não permite a quebra de linha.
+		wrap: Quebra as linhas, a partir do primeiro item que não caber na linha do container, vai para a linha de baixo.
+		wrap-reverse: A mesma logica do wrap, mas do modo contrário.
+	flex-flow: É uma atalho para o flex-direction e o flex-wrap. 
+	Justify Content: Alinha os itens dentro dos container de acordo com a direção pretendida.
+		flex-start: faz o alinhamento no inicio do container.
+		flex-end: Faz o alinhamento no final do container.
+		center: Faz o alinhamneto no centro do container
+		space-between: Cria um espaçamento igual entre os elementos
+		space-around: Os espaçamentos do meio são duas vezes maiores que o final.
+	align-itens: Alinhamento dos itens.
+		center: Centraliza todos os elementos.
+		stretch: faz com oq os elementos cresçam de acordo com o maior item dentro do elemento.
+	align-content:  Alinha as linas dos container em relação ao eixo vertical do container.
+		-o container ultilize quebra de linha.
+		-a altura d container seja maior que a soma das linhas do container.
+			center: No centro
+			stretch: Pega o maior do container e alinha.
+			flex-start: Alinha os itens no inicio.
+			flex-end: alinha os itens n final.
+			spece-between: espaço ihual entre os elementos.
+			space-around: O espaçamento do meio são duas vezes maiores que o inicial e o final.
+
+FUNDAMENTOS DO FLEX INTENS: 
+
+-flex-grow:Define a proporcionalidade de cresciemnto dos itens, respeitando o tamanho de seus conteúdos internos.
+	obs: Não funciona se tenhamos um justify content no container nao vale mais. 
+-flex-basis*: Estabelece o tamanho inicial do item antes das distribuiçõs de espaço restante dentro dele, usando como bae o cnteúdo interno. 
+	     Ela pega o tamanho minino que esse item precisa ter, e após ela vai fazer a distribuição pelo espaço antes e após o conteúdo.
+	     Precisa de um fator de crecimen, que é o flex-grow
+			auto: caso não tenha tamanho, este será proporcinal ao conteúdo.
+			px, %, em...: São valores exatos, e são os tamanhos minimos.
+			0: terá relação com o flex-grow.
+-flex-shrink*: É a propiedade que estabelece a capacidade de redu	ção ou compreensão de um item.
+-flex: Abreviação da escrita das propiedades gow, shrink, basis
+-order: Modifica a ordenação dos elementos.
+-Align-self: Estabelece o alinhamento de modo individual sobre um determinado item.
+	auto: valor padrão.
+ 	flex-start: começo do container.
+	flex-end: Final do container.
+	center: relativo ao centro de acordo com o eixo.
+	stretch: Ocupa totalmente o espaço
+	baseline: utiliza a linha da base da tipografia.
