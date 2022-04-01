@@ -1,4 +1,4 @@
-	FLEX CONTAINER: 
+FLEX CONTAINER: 
 
 -display:Inicializador do container.
 -flex-direction:Fazer o direcionamento dos itens(em linha, em coluna).
