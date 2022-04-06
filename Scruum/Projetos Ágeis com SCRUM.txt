@@ -1,0 +1,92 @@
+INTRODUÇÂO AO SCRUM: 
+
+	Conceitos básicos:
+		Desafios de desenvolvimento de software: Requisitos
+			Processo de desenvolvimento:
+-Tradicional: Só permite que o projeto avance quando uma fase está inteiramante completa.
+-Ágil: Software comtruído por partes e cada parte executa-se em um ciclo.
+		Com o projeto tradicional, você corre o risco de descobrir que estava errado depois de meses, e com o Scrum você vai descobrir em no maximo 30 dias.
+				-Concepção
+				-Análise e design
+				-Desenvolvimento
+				-Testes
+				-Implantação 
+
+-O que ser Ágil?: 
+	-Agil diferente de rápido.
+	-Agil é rapidez a mudança; 
+	-Fazer coisas complexas de formas simples; 
+	-Equipe comprometida com os objetivos; 
+	-Maior valor para o cliente. 
+
+SCRUM: Um dos frameworks de gerenciamento de projetos ágeis
+       Projetos usando equipes pequenas e multidiciplinares produzem os melhores resultados.
+		Pilares: -Tranparência:
+			 -Adaptação:
+			 -Inspeção:
+				-Conversar mais e escrever menos.
+				-Demonstrar o software constantimentes ao usuários e obter feedbacks.
+				-Requisitos mudam ao longo do tempo.
+				-Aprender progressivamete com o uso do software.
+--> Razões para escolher:
+	-Entregue em partes menores, de 2 a 4 semanas.
+	-Melhor gerenciamneto de riscos.
+	-Compromentimento, motivação.
+	-Maior valor para o negócio.
+	-Usuários envolvidos durante todo o ciclo.
+	-Aplicações das lições Aprendidas.
+
+--> Papeis e respnsabilidade: 
+	-->Product Owner(PO): 
+		-Área de négocios;
+		-Apenas uma pessoa.
+		-define as funcionalidades do software.
+		-Prioriza as funcionalidades de acordo com o valor do negócio.
+		-Garante ue o time de desenvovimeto entenda os itens do backlog.
+	-->SCRUM MASTER(SM):
+		-Garante  uso correto do scrum.
+		-Scrum master não é o gerente de projeto.
+		-Age como facilitador.
+		-Auxilia o PO no planejamento e estimativas.
+		-auxilia a equipe a remover impedimentos.
+		-Treina o Time em autogerenciamento e interdisciplinariedade.
+	-->Desenvolvimento(DEV): 
+		-Desenvolve.
+		-testa
+		-Cria
+		-Desenha
+		-Tudo o que for necessário para entragar o softwara funcionando
+
+--> Cerimonias no Scrum:
+	-Time Box: É um tempo máximo definido para fazer a cerimonia ou todo o desenvolvimento.
+	-Sprint: Corrida, arrancada, é onde acontece todo o desenvolvimento que acntece no máximo em 30 dias.
+		-Planejamento.
+		-Reuniões diária.
+		-Revisões da Sprint.
+		-Retrospectiva da Sprint.
+--Planejamento: Participa o PO, SM, DEVS.
+	-O PO explica para o time o que ele deseja na sprint, o que o time precisa entregar na sprint, em 4 horas.
+	-E nas outras quatro horas quem faz é o time de desenvolvimento e entende tecnicamete o que precisa ser feito.
+--Reuniões Diárias: Participa p DEV, PO, Master.
+	-Os DEV falam oq fez no dia anterior, o que tem para fazer e se tem empedimentos.
+	-Feita em pé, com horário definido pelo time.
+	-E em um tempo curto, dura no máximo 15 minutos.
+--Revisão da sprint: O time de DEV apresenta para o PO o que foi desenvolvido, passo a passo, durando cerca de 4 horas.
+--Retrospectiva da Sprint: A equipe, é feito uma reunião, no qual a equiva vai apontar os erros que foram ocorridos durante o desenvolvimento, sendo totalmente tranparente, ocorrendo em cerca de 3 horas para um sprint de 30 dias.
+
+
+--> Release Planning: É o lançamento de nova versão oficial do produto de sofware. Cda vz que é criado o fabricante e os DEVs decidem como distribuir o novo prouto ou a modificação as pessos
+		Release Planning de Múltiplas Squads: São varios times de desenvolvimentos agrupados fazendo varias coisas distintas que podem ou não fazer parte do produto.
+		Release Planning de projeto: O PO quebrar as hstórias o máximo que puder.
+--> Product Backlog:
+	-Épicos: Incremento sem muito detalhamento, ajda a te direcionar dos caminhos que deve seguir.
+	-Estória: Detalhamento dos epicos, um epico normalmente de divide em várias estotias, onde ficam descritos o que deve acontecer e suas regras de negócios.
+		-Nome da Estória: 
+		-Descrição da Estória: Eu, Como, Quero, quando
+		-Regras de negócio: Separar regras de front-end de regras de back-ends
+		-Tela: Link o imagm das telas a serem desenvolvidas
+		-KPI: Quais os objetivos a estória precisa atingir
+		-Tagueamento: Como a estória sera tagueada para poder mensurar a KPI
+		-Critérios de Aceite: Passo a passo de todos os caminhos.
+--> Critérios de Aceite: É uma lista de criterios qu precisam ser alcançadas para que a user Story Atenda os reqisitos e seja aceita pelo PO.
+--> Refinamento: Discute como será a proxima sprints, entende a demanda para o time, onde os timas de DEVs façam várias perguntas aos POs, Todo o time scrum tem particopação obrigatoria.
