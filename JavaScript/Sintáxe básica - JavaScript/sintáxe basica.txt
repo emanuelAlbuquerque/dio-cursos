@@ -1,0 +1,73 @@
+--> O que é: 
+	-Uma linguagem de programação de alto nivel
+	
+--> Serve:
+	Para criar scripts dinamicos que realizam a interação dos apps ou páginas mobile.
+-->Usa: usa-se de várias formas, mas seu uso mais comum se da no desenvolvimento de paginas web.
+
+
+-->Configurando e desenvolvendo:
+	Tipagem: Tipagem fraca, não precisa declarar o tipo de dado.
+
+-->Váriavel:
+	-Boolean
+	-null
+	-undefined:
+	-Number
+	-String
+	-Array
+	-Object:
+	-Function
+
+-Para declarar as variaveis existem três modos:
+	-var: escopo global e local, pode ter valor alterado, se não tiver valor icicial será tratada como null.
+	-let: escopo local de bloco,´pode ter seu valor alterado, se não tiver um valor inicial será tratada como null.
+	-const: escopo local de bloco, somente leitura, o valor inicial é obrigatorio e não pode er alterado.
+
+-Escopo: define a limitação e visibilidade de um bloco de código:
+	Global: Quano a variável é declarada fora de qualquer bloco, sua visibilidade fica disponivel em todo o código.
+	Local: Quando a variável é declarada dentro de um bloco sua visibildade pode ficar disponível ou não.
+
+-->Vetores ou arrays:
+	-São um tipo de lista, ou matriz de variavel, onde cada variavel possui um índce. Os valores podem ser de vários tipos.
+		Uma caixa, com várias outras caias dentro e cada uma cntendo u valor.
+		-O indice começa no 0
+		-Pode colocar qualquer valor.
+	-Manipulando Arrays:
+		-forEach():itera um array
+		-push(): add item no final do array
+		-pop(): remove item no final do aray
+		-shift(): remove item no ínicio do array
+		-unshift(): add item no ínicio do array
+		-indexOf(): retorna o índice de um valor
+		-splice(): remove ou substitui um item pelo índece
+		-slice(): retorna uma parte de um array existente.
+
+-->Objetos:
+	-Dados que possuem propiedades e valores que definem suas características, deve ser declarado entre chaves.
+		Ex: Uma Xícara
+			var xicara ={
+				cor: 'azul',
+				tamanho: 'p',
+				funcao: tomarCafe();
+			}
+--.Manipulando objetos.
+	-As propiedades desses objetos podem ser atribuidas á variaveis, facilitando sua manipulação.
+		Ex: propiedades da xicara
+			var cor = xicara.cor
+			var tamanho = xicara.tamanho
+			var funcao = tomarCafe();
+
+-->Estruturas Condicionais: 
+	São instruções para realizar determinadas tarefas a partir de uma condição, seja decisão ou repetição.
+		if, 
+
+--> Funções: 
+	-São blocos de comandos e intruções para a execução de determinadas tarefas.
+		Aroow Function: São funçoes de sintaxe curta. sempre serão anonimas, e portanto não podem ser nomeadas.
+	-Funções aritimetricas:
+		-Number(): converte valores em números.
+		-Prompt(): para registrar entradas de usuário
+		-Alert(): Mostrar mensagem ao usuário
+		-Template strings: Para usar strigs junto com expresões.
+ 
