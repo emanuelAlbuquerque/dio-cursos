@@ -8,3 +8,5 @@
 2. Git-GitHub;
 3. Pensamento Computacional;
 4. Posicionamento de Elementos do Flex Container.
+5. Introdução ao Scrum
+6. Interface básica do JavaScript
