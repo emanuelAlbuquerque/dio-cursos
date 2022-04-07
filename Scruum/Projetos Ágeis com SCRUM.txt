@@ -10,7 +10,7 @@ INTRODUÇÂO AO SCRUM:
 				-Análise e design
 				-Desenvolvimento
 				-Testes
-				-Implantação 
+				-Implantação .
 
 -O que ser Ágil?: 
 	-Agil diferente de rápido.
