@@ -1,0 +1,36 @@
+Operadores JavaScript:
+	-Atribuição:
+		- = // x = y // x = y
+		- += // x += y // X = X+Y
+		- *= // x *= y // X = X*Y
+		- /= // x /= y // X = x/y
+		- %=  // X %= y // X = X%Y
+	
+	-Aritimetrica:
+		- +
+		- -
+		- *
+		- **
+		- /
+		- %
+		- ++
+		- --
+	
+	-Comparação
+		- ==
+		- === - Mesmo valor mesmo tipo.
+		- != - Diferente
+		- !== - Valor e tipos diferentes.
+		- >
+		- <
+		- >= 
+		- <=
+	-Lógica
+		- && - e 
+		- || - ou
+		- ! - não
+	-Condicional
+		- if
+		- else if
+		- else 	
+		- if ternario - (condição) ? espressão1 : espressão2
