@@ -1,0 +1,15 @@
+MAP: Uma coleção de arrays no formato [chave, valor]
+	-Pode ser iterado por um loop for-of
+		-Podem ter chaves de qualquer tipos
+		-Maps possuem a propiedade length
+		-Maps são mais fáceis de iterar
+		-Utilizado quando o valor das chaves é desconhecido
+		-Os valores tem o mesmo tipo.
+
+SEt: São estruturas que armazenam apenas valores únicos no array.
+	-adicionar: .add()
+	-Ver se tem valor: .has()
+	-Deletar: .delete()
+		-Possui valores unicos.
+		-Em vez da propiedade length, consulta-se o número de registros pela propiedade size.
+		-Não possui métodos map,  filter, etc.

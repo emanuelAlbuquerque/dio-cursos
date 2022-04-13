@@ -1,0 +1,6 @@
+Módulos:
+	São arquivos JavaSript que tem a capacidade de exportar e importar informções de de outros arquivos do mesmo tipo.
+		Vantagens: 
+			-Organização de código.
+			-Compartilhamento de variáveis em escopos diferentes.
+			-Explicita as dependências dos arquivos.

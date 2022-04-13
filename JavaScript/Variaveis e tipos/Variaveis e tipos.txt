@@ -1,0 +1,32 @@
+Variaveis: 
+	var - escopo global
+	let - escopo em blocos
+
+hoisting: Atribuir um valor para a variável antes de 
+Redeclaração: Não pode redeclarar uma let 
+Reatribuir: Mudar o valor
+camelCase
+
+	-Constantes
+		-declarada em SNAKE_UPPER_CASE
+		-Escopo de bloco
+		-Não faz hoisting
+		-Não pode mudar o valor da constante, nem reatribuir e nem redeclarar
+
+--> Tipos: 
+	-Estruturas de dados: Tipagem dinâmica e fraca
+		-typeof - Ver o tipo da variável.
+	Primitivos: numbers, boolean, strings, null, undefined.
+	n primitivos: Objetos e arrays
+
+Strings: 
+	.concat: Serve para concatenar duas strings
+	.split: Separa as palavras da string
+	.includes: Procura uma palavara na strig
+	.startsWith: Verifica a letra que começa a frase
+	.endWith: Verifica a letra que termina a frase
+
+number: Números
+
+Boolean: validação, true ou false
+

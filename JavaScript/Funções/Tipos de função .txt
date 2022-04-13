@@ -1,0 +1,37 @@
+- Variavéis declaradas dentro de uma função só pode ser usada naquela variável.
+- Quando inocamos o "return", a função para de ser executada.
+
+--Função Anônima: Uma variavel que armazena uma função.
+
+--Função auto incocável: Uma funçao anônima entre parenteses seguida por outro par de parênteses, que representa sua chamada. Tamém pode ser ultilizada com parâmetros ou aramazenada em uma variável.
+
+-- Callbacks: Uma função passada de argumento para outra função.
+
+--Objeto "arguments" - Um array com todos os parâmetros passados quando a função foi invocada, é uma coleção de arrays.
+
+
+--> Arrays e Objetos
+
+	-spread: Uma forma de lidar separadamente com elementos de um array. O que era parte de um arra se torna um elemento independente.(Chamando uma função)
+	-Rest: Combina os elementos em um array.  O que era um elemento independente se torna uma parte de um array.(Declarando uma função)
+
+--> Obejetos
+
+	-Object Destructuring: Destruiturar um objeto, entre chaves podemos filtrar apenas os dados que nos interessam em um objeto.
+
+--> This: A palavra é uma referência de contexto.
+		-Em um objeto(método) - Própio objeto dono do método
+		-Sozinha - Objeto global(navegadores, windows)
+		-Função - objeto global
+		-Evento - Elemento que recebeu o evento
+
+	-bind: clona a estrutura da função onde é chamada e aplica o valor do objeto passado como parâmetro.
+
+--> Arrow Function: 
+	-caso tenha apenas uma linha, pde dispensar as chaves e o return
+	-Caso exista apenas um parâmetro, pode dispensar os parênteses.
+	-Não faz hoisting.
+	
+	Restrições - Sempre erá o objeto global. Métodos para modificar seu valor não irão funcionar.
+		     Não existe o objeto "Arguments"
+		     O contrutur (ex: new MeuObjeto()) também não pode ser utilizao.
