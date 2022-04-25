@@ -1,0 +1,28 @@
+D.O.M: O DOM HTML é um padrão de como acesar e modificar os elementos HTML de uma página.
+D.O.M vs BOM: O BOM é tudo o que está dentro do objeto window.
+
+--Métodos: 
+	document.getElementById('id no html')
+	document.getElementsByTagName('alguma tag no html') -- retorna ym array com todas as ocorrências da teg no html
+	document.getElementsByClassName('Classe do html') -- Retorna as sessões da classe texto.
+	document.querySelectorAll(Ex: tags com duas classes, aí coloca o nome das duas classes // classes especificas, exemplo uma classe 
+				  dentro de um li "li .opcao") -  retorna um array
+
+
+--> Manipulando estilos: 
+	-Element.classList
+		-classList.add(nome da classe) - adiciona uma nova classe
+		-classList.remove(nome da classe) - Remove uma classe 
+		-classList.toggle(nome da classe) - Cria uma classe se ela não existir
+
+--CSS: Acessando diretamente o css de um arquivo
+	document.getElementsByTagName('p').style.color = "blue" - Adiciona a cor azul a todos os paragrafos. 
+
+--Eventos: São qualquer tipo de ação que p usuário faz em uma página web
+	-Eventos de mouse - mouseover, mouseout
+	-Eventos de clique - click, dbclick(cloque duplos)
+	-Eventos de atualização - change, load
+
+--Acionando eventos 
+	addEventListener("Tipo" , "O que vai fazer quando o tipo for acionado")
+	-Usando direto no HTML deve-se usar o "on" na frente do tipo
