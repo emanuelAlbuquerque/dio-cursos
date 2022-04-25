@@ -1,0 +1,20 @@
+MAP: 	-Cria um novo array
+	-Não modifica o array original
+	-Realiza as operaçõs em ordem.
+
+-Sintexe:
+	array.map(callback, thisArg)
+		-callback: Função a ser execultada em cada elemento callback(item, index, array)
+		-thisArg: Opicional, valor de this dentro da função de callback.
+
+-Map vs forEach: 
+	map: retorna outro array
+	forEach: Precisa de uma const
+
+--> Filter: Cria um novo array, não modifica o array original.
+	-sintexe: array.filter(callback, thisArg)
+
+--> Reduce: Executa uma função em todos os elementos do array e retornar um valor único.
+	-sintexe: array.reduce(callback, initialValue)
+		Callback: função a ser execultada a partir do acumulador.
+		initialValue: Opicional, Valor sobre qual o retorno final irá atuar.
