@@ -1,0 +1,24 @@
+--> Paradigmas:
+	-Imperativo: Como resolver os problemas.(Orientaçã a objetos)
+	-Declarativo: No que vai fazer.(banco de dados)
+
+-Os objetos são pessoas que possuem uma série de propiedades.
+	-Herança.
+	-Polimoefismo.
+	-Encapsulamento.
+	-Abestração.
+
+-Abstração: Tranformar um problema complexo em cada vez mais simples
+-Hermaça: Obejetos filhos que herdam propiedades dos pais.
+-Encapsulamento: Cada clase tem propiedades e métodos independentes.
+-Polimofismo: Objetos podem herdar a mesma classe pai, mas se comportam de forma diferente.
+
+
+--> Js orientados a objetos.
+
+-Protótipos: São um esqueleto de todos os objetos, esse objeto está no topo da cadeia.
+-Classes: Uma sintaxe feita para facilitar a escrita, Js não possuem classes nativamente.
+	-contrutor
+	-getter e setter
+	-super()
+	-método
