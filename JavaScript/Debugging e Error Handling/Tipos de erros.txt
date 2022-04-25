@@ -1,0 +1,12 @@
+--> ECMAScript Error:
+	-Erros que acontece em tempo de execução.
+		-menssagem
+		-Nome
+		-Linha
+		-Call stack
+	-Pode ser uma variável que bão foi declada, um ponto e virgula que esqueceu...
+
+--> DOMException: Relacionado ao código que está sendo rodado em uma página da web.
+
+--> Tratando Erros: 
+	
