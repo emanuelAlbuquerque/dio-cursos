@@ -1,0 +1,18 @@
+--> Que não ocorre ou não se afetiva ao menso tempo.
+	-Ex: Aulas online-Ver as aulas no tempo que você.
+	-No JavaScript ele é de maneira síncrona, ele faz uma coisa, pra depois fazer outra, e no Js Assíncrono pode fazer várias coisas ao menso tempo.
+
+-->Promises - Objeto de processamaneto assícrono, inicialmnte, seu valor é desconhecido. Ela pode então ser resolvida ou rejeitada.
+	-Ex: Um ingresso de um show
+	-Três estados:
+		-Pending
+		-Fulfilled
+		-Rejected
+--> Async - await 
+	Para criar uma função é preciso colocar o Async para ela receber promessas.
+	Para manipular função, é prciso usar o await
+
+-->APIs: É uma forma de intermediar os resuktados os resultados bo back com o que é apresentado no front.
+	-JSON: É muito comum que os resultados são no formato .json.
+
+-->Fetch: Ele retorna uma promise.
